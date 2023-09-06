@@ -3,13 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 
 import { UsersEntity } from './users.entity';
-
-interface User {
-  id: number;
-  name: string;
-  email: string;
-  password: string;
-}
+import { User } from 'src/typings';
 
 @Injectable()
 export class UsersService {
