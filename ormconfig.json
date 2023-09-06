@@ -1,8 +1,11 @@
 {
   "type": "mysql",
   "host": "localhost",
-  "port": 3306,
-  "username": "nestcrud",
+  "port": "3306",
+  "username": "root",
   "password": "password",
-  "database": "nestcrud"
+  "database": "nestcrud",
+  "synchronize": true,
+  "logging": true,
+  "entities": ["src//*.entity.{js,ts}", "dist//*entity.{js,ts}"]
 }
